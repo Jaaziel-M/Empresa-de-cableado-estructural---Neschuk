@@ -1,0 +1,667 @@
+
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'Mukta';
+    src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CCS Header */
+
+.header{
+    grid-area: header;
+}
+.navbar{
+    font-family: 'Mukta';
+    text-align: space-between;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #000000;
+}
+.navbar__li{
+    padding: 0.5;
+}
+.navbar__link{
+    color: #ff8800;
+    text-shadow: 2px 2px #4ddfd7c4;
+    text-decoration: dotted ;
+    font-size: xx-large;
+    
+    
+}
+navbar__link:hover{
+
+}
+
+
+/* Fin CCS Header */
+
+
+
+
+
+
+/* CCS Footer  */
+
+.footer{
+    grid-area: footer;
+}
+.footr__li{
+    display:inline-block; 
+    border-style: dotted;
+    border-radius: 5%;
+    border-width: 3px;
+    border-spacing: 1%;
+    border-color: #f97211;
+    background-color: #f9721138;
+}
+.footr__link{
+
+    color: #02DEC4;
+    font-size: larger;
+}
+.footr__copyright{
+    color: #3513f5e5;
+    text-shadow: 1px 1px #ff7c1ecc;
+    font-size: large;
+
+}
+
+/* FIN CCS Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CCS Alcance*/
+
+.allreach{
+    background-image: linear-gradient(to left,#363636,#838282);
+    background-position: center;
+    background-size:cover;
+    font-family: 'Mukta';
+    background-color: 	#333333;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "foto texto1 sucursales"
+    "foto texto2 sucursales"
+    "foto texto3 sucursales"
+    "foto footer sucursales"
+    ;
+    grid-template-columns: 400px auto 200px;
+    grid-template-rows:  50px 100px 350px 350px 350px 80px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    align-items: center;
+}
+.reach{
+    background-color: #2b2936ab;
+}
+.reach__aside{
+    grid-area: sucursales;
+    padding: 3px;
+}
+.texto1{
+    grid-area: texto1;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.texto2{
+    grid-area: texto2;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.texto3{
+    grid-area: texto3;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.reach__article{
+    grid-area: foto;
+}
+.reach__title{
+    display: grid;
+    grid-area: titulo;
+    justify-content: center;
+    color:  #33ccee;
+    text-shadow:2px 1px #440099;
+    font-size: 40px;
+    text-align: center;
+}
+.reach__li{
+    color:  #33ccee;
+    text-shadow:1px 1px #ff8800;
+    text-align: end;
+    font-size: 250%;
+    grid-area: texto1;
+}
+.reach__txt{
+    color: #33ccee;
+    text-shadow:2px 1px #000000;
+    font-size: large;
+    grid-area: texto1;
+}
+.suc__prov{
+    border: #ff8800;
+    color: #02DEC4;
+    background-color: #f972114a;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.suc__site{
+    text-align: center;
+    font-size: 25px;
+    list-style-type: none;
+    text-align: end;
+    padding-right: 3%;
+    color: #000000;
+}
+.map{
+    grid-area: foto;
+    justify-content: start;
+}
+.suc__title{
+    color:  #33ccee;
+    text-shadow:2px 1px #440099;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+.svc__img{
+    height: 500px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.svc__title{
+    text-align: center;
+    color:  #33ccee;
+    text-shadow:2px 1px #440099;
+    font-size: 35px;
+}
+@font-face {
+    font-family: 'Mukta';
+    src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS index */
+
+.allindex{
+    background-image: linear-gradient(to left,#446666,#333333);
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "logo logo logo"
+    "titulo titulo titulo"
+    "footer footer footer"
+    ;
+    grid-template-columns: 1380px;
+    grid-template-rows:  50px 450px 90px 60px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    justify-items:stretch;
+}
+.logo{
+    background-image: url('http://devlup.com/wp-content/uploads/2012/10/inside-google-datacenter.png');
+    background-size: 150%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.logo__img{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: 96%;
+    height: 75%;
+}
+.logo__img__text{
+    grid-area: titulo;
+    font-size: 50px;
+    color: #33ccee;
+    text-shadow: 3px 2px #6746B9;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    padding-bottom: 1%;
+}
+.footr{
+    font-family: 'Mukta';
+    font-weight:bold;
+    text-align: center;
+    grid-area: footer;
+}
+.HeadIndex{
+    grid-area: header;
+}
+.overall{
+    grid-area: logo;
+}
+
+/* Fin de CSS Index */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CCS Acerca de  */
+
+.allcert{
+    background-image:url("../assets/images/certificaciones/8220network1.jpg"); 
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    font-family: 'Mukta';
+}
+
+.toptitle{
+    text-align: center;
+    color: #02DEC4;
+    margin-top: 2%;
+    font-size: xx-large;
+    
+}
+
+.toptext{
+    text-align: center;
+    font-size: x-large;
+    color:  #F97111;
+
+}
+
+
+.about{
+    text-align: center;
+}
+
+.about__h1{
+    color: aqua;   
+    text-shadow: #6746B9 1px 1px;
+    font-size: 300%;
+}
+
+.about__h2{
+    color: aqua;   
+    text-shadow: #6746B9 1px 1px;
+    font-size: 200%;
+}
+
+.value__title{
+    color: #6746B9;   
+    font-size: 150%;
+    text-shadow: #02DEC4 1px 1px;
+}
+
+.about__txt{
+    text-align: center;
+    font-size: x-large;
+    color:  #F97111;
+}
+
+.value__txt{
+    text-align: center;
+    font-size: large;
+    color:  #F97111;
+}
+
+.cert__table{
+    
+    border: #6746B9;
+    border-style: groove;
+    width: 150% viewport-width 100%;
+    border-style: solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-collapse: separate;
+    text-align: center;
+    border-spacing: 16%;
+
+}
+.cert__item1{
+    border-spacing: 16%;
+    background-color: #f9721167;
+    border-color: #F97111;
+    border-style: dashed;
+    width: 15%;
+    color:#FFDD31;
+    font-size: 200%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /*border-collapse: separate;*/
+}
+.cert__item2{ 
+    background-color: #f9721167;
+    border-color: #F97111;
+    
+    color: aqua;   
+    font-size: 200%;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    border-spacing: 16%;
+}
+
+.certs{
+    margin-left: 20%;
+    margin-bottom: 2%
+}
+
+.certs__images{
+    width: 15%;
+    height: 15%;
+}
+
+/*Fin CCS Acerca de */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS galería*/
+
+.gal{
+    background-image: linear-gradient(to left,#02DEC4,#1023EA);
+}
+
+.gal__title{
+    font-family: 'Mukta';
+    color: #F97111;
+    text-shadow: #0621A6 2px 2px;
+    font-size: 300%;
+    text-align: center;
+}
+
+.gal__vid{
+    display: inline-block;
+    position: sticky;
+    height: 200px;
+    width: 400px;
+    top: 5%;
+    right: 0px;
+    left: 70%;
+}
+
+.gal__pic{
+    width: 80%;
+    height: 60%;
+}
+
+/*Fin CSS Galeria */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contacto CSS*/
+
+#Consultas{
+    background-image: url('../assets/images/network\ infrastructure.jpg');
+    background-position:center;
+    background: size 1000%;
+}
+.ConsHead{
+    text-align: center;
+    font-family: 'Mukta';
+    color: #F97111;
+    text-shadow: #02DEC4 2px 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.form{
+    border: #02DEC4;
+    border-style: double;
+    border-radius: 6%;
+    border-width: 7px;
+    font-family: 'Mukta';
+}
+.form__text{
+    font-size: xx-large;
+    color: #6746B9;
+    text-shadow: #02DEC4 2px 2px;
+    text-align: center;
+    padding-left: 3%;
+}
+.form__input{
+    margin-left: 5%;
+    width: 50%;
+    text-align:left;
+    font-size: x-large;
+    border-style:groove;
+    border-color: #6746B9;
+    border-width: 3px;
+    background-color: #0621A6;
+    color: #02DEC4;
+}
+.form__checktxt{
+    font-size: x-large;
+    color: #6746B9;
+    text-shadow: #02DEC4 2px 2px;
+    text-align: end;
+    padding-left: 10%;
+}
+.form__checkbox{
+    width: 20px;
+    height: 20px;
+}
+.form__bigsqr{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 300px; 
+    width: 700px;
+    font-size: larger;
+    background-color: #0621A6;
+}
+.form__button{
+    margin-left: 5%;
+    width: 15%;
+    height: 10%;
+}
+#data{
+    font-family: 'Mukta';
+    text-align: center;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Mukta';
+    color: #F97111;
+    text-shadow: #02DEC4 2px 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+

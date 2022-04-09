@@ -45,11 +45,11 @@
     text-shadow: 2px 2px #4ddfd7c4;
     text-decoration: dotted ;
     font-size: xx-large;
-    
+    transition: color 0.5s;
     
 }
-navbar__link:hover{
-
+.navbar__link:hover{
+    color: #0d69e2;
 }
 
 
@@ -71,19 +71,30 @@ navbar__link:hover{
     border-radius: 5%;
     border-width: 3px;
     border-spacing: 1%;
-    border-color: #f97211;
-    background-color: #f9721138;
+    border-color: #ff8800;
+    background-color: #f9721120;
+    transition: border-color 2s;
+    transition: background-color 2s;
+}
+.footr__li:hover{
+    border-color: #02DEC4;
+    background-color: #02dec445;
+
 }
 .footr__link{
 
     color: #02DEC4;
     font-size: larger;
+    transition: color 1s;
+}
+.footr__link:hover{
+    color: #ff8800;
 }
 .footr__copyright{
     color: #3513f5e5;
     text-shadow: 1px 1px #ff7c1ecc;
     font-size: large;
-
+    
 }
 
 /* FIN CCS Footer */

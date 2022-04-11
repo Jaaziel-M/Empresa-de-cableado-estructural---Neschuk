@@ -5,6 +5,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 @font-face {
     font-family: 'Mukta';
     src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
@@ -25,6 +26,7 @@
 
 .header{
     grid-area: header;
+
 }
 .navbar{
     font-family: 'Mukta';
@@ -297,6 +299,7 @@
 
 /* CSS index */
 
+/*
 .allindex{
     background-image: linear-gradient(to left,#446666,#333333);
     display: grid;
@@ -312,12 +315,34 @@
     grid-column-gap: 2px;
     justify-items:stretch;
 }
+
 .logo{
     background-image: url('http://devlup.com/wp-content/uploads/2012/10/inside-google-datacenter.png');
     background-size: 150%;
     background-position:center;
     background-repeat: no-repeat;
+}*/
+.container-fluid{
+    
+    border: 0px; 
+    margin: 0px; 
+    padding: 0px; 
+    background-image: linear-gradient(to left, #33ccee, #446666);
 }
+
+.center-block{
+    animation-name: LogoAnimation;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+@keyframes LogoAnimation{
+    0%{ transform: rotateX(90deg);}
+
+}
+
 .logo__img{
     margin-left: 2%;
     margin-right: 2%;
@@ -326,15 +351,57 @@
     width: 96%;
     height: 75%;
 }
-.logo__img__text{
-    grid-area: titulo;
+.text-center{
     font-size: 50px;
     color: #33ccee;
     text-shadow: 3px 2px #6746B9;
     font-family: 'Mukta', sans-serif;
-    text-align: center;
     padding-bottom: 1%;
+    animation-name: link;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: ease-in;*/
+    animation-duration: 2s;
+    animation-delay: 0s;
 }
+
+
+
+@keyframes link {
+    0%{
+        text-shadow: 3px 2px #21b114;
+    }
+    10%{
+        text-shadow: 3px 2px #3a4339;
+    }
+    20%{
+        text-shadow: 3px 2px #3a4339;
+    }
+    30%{
+        text-shadow: 3px 2px #21b114;
+    }
+    40%{
+        text-shadow: 3px 2px #3a4339;
+    }
+    50%{
+        text-shadow: 3px 2px #21b114;
+    }
+    60%{
+        text-shadow: 3px 2px #3a4339;
+    }
+    70%{
+        text-shadow: 3px 2px #21b114;
+    }
+    80%{
+        text-shadow: 3px 2px #3a4339;
+    }
+    90%{
+        text-shadow: 3px 2px #21b114;
+    }
+    100%{
+        text-shadow: 3px 2px #21b114;
+    }
+}
+
 .footr{
     font-family: 'Mukta';
     font-weight:bold;
@@ -533,31 +600,47 @@
 
 /*CSS galería*/
 
-.gal{
-    background-image: linear-gradient(to left,#02DEC4,#1023EA);
+.container-fluid{
+    background-image: linear-gradient(to bottom,#440099,#333333);
 }
 
 .gal__title{
     font-family: 'Mukta';
-    color: #F97111;
-    text-shadow: #0621A6 2px 2px;
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
     font-size: 300%;
     text-align: center;
 }
-
-.gal__vid{
-    display: inline-block;
-    position: sticky;
-    height: 200px;
-    width: 400px;
-    top: 5%;
-    right: 0px;
-    left: 70%;
+.col-lg-4{
+    padding: 10px
 }
 
-.gal__pic{
-    width: 80%;
-    height: 60%;
+@keyframes colores{
+    0%{
+        color: #F97111;
+        text-shadow: #0621A6 3px 3px;
+    }
+    25%{
+        color: #f9ce11;
+        text-shadow: #137087 3px 3px;
+    }
+    50%{
+        color: #14dd1e;
+        text-shadow: #3f1ca9 3px 3px;
+    }
+    75%
+    {
+        color: #2b48da;
+        text-shadow: #3f1ca9 3px 3px;
+    }
+    100%
+    {
+        color: #14dd1e;
+        text-shadow: #8620b2 3px 3px;
+    }
 }
 
 /*Fin CSS Galeria */
@@ -599,24 +682,50 @@
 /*Contacto CSS*/
 
 #Consultas{
-    background-image: url('../assets/images/network\ infrastructure.jpg');
-    background-position:center;
-    background: size 1000%;
+    background-image: linear-gradient(to right, #440099, #446666);
+    
 }
 .ConsHead{
     text-align: center;
     font-family: 'Mukta';
-    color: #F97111;
+    color: #1edf09;
     text-shadow: #02DEC4 2px 2px;
     margin-top: 3%;
     margin-bottom: 3%;
+    font-size: 70px;
+    animation-name: radioactive;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
+
+@keyframes radioactive{
+    0%{ 
+        text-shadow: 0 0 8px #2bff00, 0 0 8px #00eeff;
+    }
+    25%{
+        text-shadow: 0 0 8px #2bff0074, 0 0 8px #00eeff;
+    }
+    50%{
+        text-shadow: 0 0 8px #2bff0057, 0 0 8px #00eeff;;
+    }
+
+    75%{
+        text-shadow: 0 0 8px #2bff0099, 0 0 8px #00eeff;
+    }
+    100%{
+        text-shadow: 0 0 8px #2bff00, 0 0 8px #00eeff;
+    }
+}
+
 .form{
     border: #02DEC4;
     border-style: double;
     border-radius: 6%;
     border-width: 7px;
     font-family: 'Mukta';
+    background-color: rgba(0, 0, 0, 0.599);
 }
 .form__text{
     font-size: xx-large;
@@ -633,7 +742,7 @@
     border-style:groove;
     border-color: #6746B9;
     border-width: 3px;
-    background-color: #0621A6;
+    background-color: #ff880072;
     color: #02DEC4;
 }
 .form__checktxt{
@@ -653,7 +762,11 @@
     height: 300px; 
     width: 700px;
     font-size: larger;
-    background-color: #0621A6;
+    background-color: #ff880072;
+    border-style:groove;
+    border-color: #6746B9;
+    border-width: 3px;
+    color: #02DEC4;
 }
 .form__button{
     margin-left: 5%;

@@ -206,6 +206,10 @@
     font-size: 250%;
     grid-area: texto1;
 }
+.SucList{
+    list-style-type: none;
+    background-color: #f972114a;
+}
 .reach__txt{
     color: #33ccee;
     text-shadow:2px 1px #000000;
@@ -213,25 +217,26 @@
     grid-area: texto1;
 }
 .suc__prov{
-    border: #ff8800;
-    color: #02DEC4;
-    background-color: #f972114a;
+    /*border: #ff8800;*/
+    color: #440099;
     font-size: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 .suc__site{
-    text-align: center;
+    color: #333333;
+
     font-size: 25px;
-    list-style-type: none;
     text-align: end;
-    padding-right: 3%;
-    color: #000000;
+    /*padding-right: 3%;*/
+
 }
 .map{
     grid-area: foto;
-    justify-content: start;
+    justify-content: center;
+    
 }
 .suc__title{
     color:  #33ccee;
@@ -246,14 +251,28 @@
     width: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    animation-name: ArgenEffect;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
 }
+
+@keyframes ArgenEffect {
+    0%{ transform: rotateY(360deg);}
+    /*25%{transform: rotateY(180deg);}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}*/
+}
+
 .svc__title{
     text-align: center;
     color:  #33ccee;
     text-shadow:2px 1px #440099;
     font-size: 35px;
 }
+
+
 @font-face {
     font-family: 'Mukta';
     src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
@@ -299,43 +318,18 @@
 
 /* CSS index */
 
-/*
-.allindex{
-    background-image: linear-gradient(to left,#446666,#333333);
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "logo logo logo"
-    "titulo titulo titulo"
-    "footer footer footer"
-    ;
-    grid-template-columns: 1380px;
-    grid-template-rows:  50px 450px 90px 60px;
-    grid-row-gap: 2px;
-    grid-column-gap: 2px;
-    justify-items:stretch;
-}
 
-.logo{
-    background-image: url('http://devlup.com/wp-content/uploads/2012/10/inside-google-datacenter.png');
-    background-size: 150%;
-    background-position:center;
-    background-repeat: no-repeat;
-}*/
-.container-fluid{
-    
-    border: 0px; 
-    margin: 0px; 
-    padding: 0px; 
-    background-image: linear-gradient(to left, #33ccee, #446666);
+.test{
+    background-image: url('../assets/images/a2.jpg');
+    background-position: bottom;
 }
-
 .center-block{
     animation-name: LogoAnimation;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 2s;
     animation-delay: 0s;
+    
 }
 
 @keyframes LogoAnimation{
@@ -402,17 +396,32 @@
     }
 }
 
+.value__title{
+    color: 	#33ccee;   
+    font-size: 150%;
+    text-shadow: #440099 1px 1px;
+    text-align: center;
+}
+.value__txt{
+    text-align: center;
+    font-size: large;
+    color:  #F97111;
+}
+
+.EffectValues{
+    background-color: none;
+    transition: background-color 1s;
+}
+.EffectValues:hover{
+    background-color: #333333
+}
+
+
 .footr{
     font-family: 'Mukta';
     font-weight:bold;
     text-align: center;
-    grid-area: footer;
-}
-.HeadIndex{
-    grid-area: header;
-}
-.overall{
-    grid-area: logo;
+
 }
 
 /* Fin de CSS Index */
@@ -497,11 +506,7 @@
     font-size: 200%;
 }
 
-.value__title{
-    color: #6746B9;   
-    font-size: 150%;
-    text-shadow: #02DEC4 1px 1px;
-}
+
 
 .about__txt{
     text-align: center;
@@ -509,11 +514,6 @@
     color:  #F97111;
 }
 
-.value__txt{
-    text-align: center;
-    font-size: large;
-    color:  #F97111;
-}
 
 .cert__table{
     

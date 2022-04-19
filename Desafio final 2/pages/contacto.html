@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC | Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../assets/images/a1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="Consultas">
+
+    
+    <header class="Head">
+            
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img class="nec" src="../assets/images/output-onlinepngtools.png" alt="">
+            </a>
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                
+                <a class="nav-link" href="../index.html">
+                    <img class="bi d-block mx-auto mb-1" src="../assets/Icons/svg/home-alt.svg" alt="">
+                    Inicio 
+                </a>
+            </li>
+            <li class="nav-item active">
+            
+                <a class="nav-link" href="acerca-de.html">
+                    <img class="bi d-block mx-auto mb-1" src="../assets/Icons/svg/book-opened.svg" alt="">
+                    Acerca de
+                </a>
+    
+            </li>
+            <li class="nav-item active">
+            
+                <a class="nav-link" href="../pages/alcance.html">
+                    <img class="bi d-block mx-auto mb-1" src="../assets/Icons/svg/language.svg" alt="">
+                    Alcance
+                </a>
+    
+            </li>
+            </li>
+            
+            <li class="nav-item active">
+            
+                <a class="nav-link" href="../pages/galeria.html">
+                    <img class="bi d-block mx-auto mb-1" src="../assets/Icons/svg/camera.svg" alt="">
+                    Galeria
+                </a>
+    
+            </li>
+            
+            <li class="nav-item active">
+            
+                <a class="nav-link" href="../pages/contacto.html">
+                    <img class="bi d-block mx-auto mb-1" src="../assets/Icons/svg/people.svg" alt="">
+                    Contacto
+                </a>
+    
+            </li>
+
+            </ul>
+
+            <form class="form-inline" action="">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </nav>
+    </header>
+
+    <h1 class="ConsHead">Dejanos tu consulta</h1>
+
+    <main class="form">
+
+        <form action="datos-de-contacto.php" method="post"></form>
+            <p >
+                <label class="form__text" for="nya">Nombre y apellido:</label>
+                <br>
+                <input class="form__input" type="text" name="nya" id="" placeholder="ingresá tu nombre y apellido" pattern="[a-z A-Z].{3,}"> 
+            </p>
+            <p>
+                <label class="form__text" for="Telefono">Numero de Telefono:</label>
+                <br>
+                <input class="form__input" type="number" name="Telefono" id="" placeholder="ingresá tu numero" > 
+                <br>
+                <label class="form__text" for="rad1" >Preferencia de contacto:</label>
+                <br>
+                <label class="form__checktxt" for="chckbx" >Telefono</label>
+                <input class="form__checkbox" type="checkbox" name="chckbx" id="">
+                <label class="form__checktxt" for="chckbx">Whatsapp</label>
+                <input class="form__checkbox" type="checkbox" name="chckbx" id="">
+                <label class="form__checktxt" for="chckbx">Mail</label>
+                <input class="form__checkbox" type="checkbox" name="chckbx" id="">
+                <br>
+
+            </p>
+            <p>
+                <label class="form__text" for="email">Email:</label>
+                <br>
+                <input class="form__input" type="email" name="mail" id="" placeholder="ingresá tu email" style="padding-inline-start: 10%;"> 
+            
+            </p>
+
+            <p>
+                <label class="form__text" for="texto">Motivo:</label>
+                <br>
+                <input class="form__bigsqr" type="text" name="texto" id="" placeholder="Contanos como te podemos ayudar"  > 
+                
+
+            </p>
+
+
+            <div class="container d-flex justify-content-around">
+                <input class="btn-lg btn-success" type="submit" name="enviar" id="" value="Enviar">
+                <input class="btn-lg btn-danger" type="reset" name="reset" id="" value="Borrar formulario">
+            </div>
+            <hr>
+    </main>
+
+    <aside id="data">
+        <dl >
+            <b >Telefonos</b>
+            
+            <p > Buenos Aires    - 1111111111111  |           
+                Santa fe  	    - 222222222 |
+            Cordoba 		- 333333333 |
+            Entre ríos 	    - 444444444     |       San Luís 		- 5555555555 
+            Chubut 		    - 6666666666     |       Usuhaia 		- 777777777777</p>  
+            
+        </dl>
+        <dl >
+            <b >Email:</b>
+            <p >consultas@nec.com.ar</p>
+            
+        </dl>
+    </aside>
+
+
+    
+    <footer class="footr">
+        <div class="container">
+            <nav class="">
+                
+                <ul class="">
+
+                    <li class="btn navbar-btn">
+                    
+                        <a class="btn btn-light" href="../pages/contacto.html">
+                            Contacto
+                        </a>
+                    
+                    </li>
+                    <li class="btn navbar-btn">
+                    
+                        <a class="btn btn-light" href="alcance.html">
+                            Alcance
+                        </a>
+                    
+                    </li>
+
+                    <li class="btn navbar-btn">
+                    
+                        <a class="btn btn-light" href="https://www.privacypolicies.com/  generic/">
+                            Politica de privacidad
+                        </a>
+                    
+                    </li>
+
+                    <li class="btn navbar-btn">
+                    
+                        <a class="btn btn-light" href="../index.html">
+                            Inicio
+                        </a>
+                    
+                    </li>
+
+                    <li class="btn navbar-btn">
+                    
+                        <a class="btn btn-light" href="https://www.afip.gob.ar/landing/  default.aspl">
+                            Data fiscal
+                        </a>
+                    
+                    </li>
+                
+                    </ul>
+        </div>    
+                
+        <section class="container">
+            <ul class="d-flex justify-content-center" style="list-style: none;">
+                <li>
+                    <a class="nav-link" href="https://es-la.facebook.com">
+                        <img class="SocialIcons" src="../assets/Icons/Social/facebook (1).png" alt="">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://www.instagram.com/">
+                        <img class="SocialIcons" src="../assets/Icons/Social/instagram (1).png" alt="">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://www.linkedin.com">
+                        <img class="SocialIcons" src="../assets/Icons/Social/linkedin (1).png" alt="">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://twitter.com/">
+                        <img class="SocialIcons" src="../assets/Icons/Social/twitter (1).png" alt="">
+                        
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <p class="text-light">Copyright © 2022 - Todos los    derechos reservados </p>
+    </footer>
+
+</body>
+
+</html>

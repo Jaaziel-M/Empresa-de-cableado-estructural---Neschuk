@@ -1,0 +1,18 @@
+body{
+
+
+    /*.IndexBody{*/
+        font-family: 'Mukta';
+        
+        display: grid;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "title title title"
+        "values values values"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33,3% 33,3% 33,3%;
+        grid-template-rows:  110px 1000px 500px 200px;
+    /*} */
+
+}

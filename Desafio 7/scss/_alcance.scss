@@ -1,0 +1,237 @@
+
+@import "animaciones";
+
+@mixin pairs{
+    display: flex;
+    flex-direction: row;
+}
+
+.reach__aside{
+    grid-area: sucursales;
+    padding: 3px;
+}
+
+
+.pair1{
+    @include pairs;
+}
+
+.pair2{
+    @include pairs;
+}
+
+.texto1{
+    grid-area: texto1;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: none;
+    transition: background-color 1s;
+}
+.texto1:hover{
+    background-color: #000000;
+    
+
+}
+
+.texto2{
+    grid-area: texto2;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: none;
+    transition: background-color 1s;
+}
+.texto2:hover{
+    background-color: #000000;
+}
+.texto3{
+    grid-area: texto3;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: none;
+    transition: background-color 1s;
+}
+.texto3:hover{
+    background-color: #000000;
+}
+.reach__article{
+    grid-area: foto;
+    
+}
+.reach__title{
+    display: grid;
+    grid-area: titulo;
+    justify-content: center;
+    color:  #E5E5E5;
+    text-shadow:1px 1px #FCA311;
+    font-size: 60px;
+    text-align: center;
+}
+.reach__li{
+    color:  #E5E5E5;
+    text-align: center;
+    font-size: 30px;
+    grid-area: texto1;
+}
+.SucList{
+    list-style-type: none;
+    background-color: #f972114a;
+}
+.reach__txt{
+    color:#FFFFFF;
+    
+    font-size: large;
+    grid-area: texto1;
+}
+.EffectValues{
+    background-color: none;
+    transition: background-color 1s;
+}
+.EffectValues:hover{
+    background-color: #333333
+}
+
+
+
+.suc__prov{
+    /*border: #ff8800;*/
+    color: #440099;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.suc__site{
+    color: #333333;
+
+    font-size: 25px;
+    text-align: end;
+    /*padding-right: 3%;*/
+
+}
+
+.suc__title{
+    color:  #E5E5E5;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+/*Mapa de la argentina*/
+
+.svc__title{
+    
+    text-align: center;
+    color:  #E5E5E5;
+    text-shadow:1px 1px #FCA311;
+    font-size: 50px;
+}
+.svc__img{
+    height: 1000px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    animation-name: ArgenEffect;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+
+
+
+
+
+/*Animación de las fotos*/
+
+
+.places {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.places .places-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.places:hover .places-overlay{
+    opacity: 1;
+}
+
+.places-image{
+    width: 100%;
+}
+
+.places-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.places:hover .places-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.places-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.places-details p{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+.fadeIn-top{
+    top: 20%;
+}
+
+.fadeIn-left{
+    left: 20%;
+}
+
+.fadeIn-right{
+    left: 80%;
+}
+/*FIN animacion de las fotos*/
+

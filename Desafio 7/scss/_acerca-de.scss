@@ -1,0 +1,120 @@
+
+
+/* CCS Acerca de  */
+
+.allcert{
+    
+
+    
+    background-color: #E5E5E5; 
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    font-family: 'Mukta';
+    
+    
+}
+
+.toptitle{
+    text-align: center;
+    color: #14213D;
+    text-shadow: #6746B9 1px 1px;
+    margin-top: 2%;
+    font-size: xx-large;
+    
+    
+}
+
+.toptext{
+    text-align: center;
+    font-size: x-large;
+    color:  #000000;
+    padding: 2%;
+}
+
+
+
+.about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about__title{
+    color: #14213D;   
+    text-shadow: #6746B9 1px 1px;
+    font-size: 50px;
+    
+}
+
+.about__h2{
+    color: aqua;   
+    text-shadow: #6746B9 1px 1px;
+    font-size: 200%;
+}
+
+
+
+.about__txt{
+    text-align: center;
+    font-size: x-large;
+    color:  000000;
+    padding: 2%;
+}
+
+
+.cert__table{
+    
+    border: none;
+    border-style: groove;
+    width: 150% viewport-width 100%;
+    border-style: solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse: separate;
+    text-align: center;
+    border-spacing: 16%;
+
+
+}
+.cert__item1{
+    border-spacing: 16%;
+    background-image: linear-gradient(to left, black, #343333);
+    border-color: none;
+    border-style: dashed;
+    width: 15%;
+    color:#FCA311;
+    font-size: 200%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /*border-collapse: separate;*/
+}
+.cert__item2{ 
+    background-color: black;
+    border-color: none;
+    
+    color: #E5E5E5;   
+    font-size: 200%;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    border-spacing: 16%;
+}
+
+.certs{
+    margin-left: 20%;
+    margin-bottom: 2%
+    
+}
+
+.certs__images{
+    width: 15%;
+    height: 15%;
+}
+
+/*Fin CCS Acerca de */
+
+

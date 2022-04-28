@@ -1,0 +1,78 @@
+
+    
+
+    header{
+        .Log{
+            background-color: black;
+        }
+        
+        .navbar{
+            background-color: #000000;
+        }
+        
+        .nec{
+            width: 250px;
+            height: 70px;
+        }
+
+        .Head{
+            grid-area: hdr;
+            position: relative;
+        }
+        .nav-link{
+            font-size: 25px;
+            color: #E5E5E5;
+        }
+    }
+
+
+
+    .IndexBody{
+
+        font-family: 'Mukta';
+        background-color: #14213D;
+        display: grid;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "title title title"
+        "values values values"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33,3% 33,3% 33,3%;
+        grid-template-rows:  110px 700px 500px 150px; 
+    }
+
+    .allreach{
+        background-color: #14213D;
+        background-position: center;
+        background-size:cover;
+        font-family: 'Mukta';
+        display: grid;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "titulo titulo titulo"
+        "texto1 texto2 texto3"
+        "foto sucursales sucursales"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33% auto 33%;
+        grid-template-rows:  110px 130px 250% 300% 200px;
+        grid-row-gap: 2px;
+        grid-column-gap: 2px;
+        align-items: center;
+    }
+
+
+
+
+
+
+    footer{
+        .footr{
+            grid-area: footr;
+        }
+        .SocialIcons{
+            width: 60px;
+            height: 60px;
+        }
+    }

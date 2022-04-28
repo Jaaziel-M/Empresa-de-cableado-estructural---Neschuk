@@ -1,0 +1,130 @@
+
+/*Contacto CSS*/
+
+#Consultas{
+    background-color: #14213D;
+    
+}
+.ConsHead{
+    text-align: center;
+    font-family: 'Mukta';
+    color: #1edf09;
+    text-shadow: #02DEC4 2px 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 70px;
+    animation-name: radioactive;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes radioactive{
+    0%{ 
+        text-shadow: 0 0 8px #2bff00, 0 0 8px #00eeff;
+    }
+    25%{
+        text-shadow: 0 0 8px #2bff0074, 0 0 8px #00eeff;
+    }
+    50%{
+        text-shadow: 0 0 8px #2bff0057, 0 0 8px #00eeff;;
+    }
+
+    75%{
+        text-shadow: 0 0 8px #2bff0099, 0 0 8px #00eeff;
+    }
+    100%{
+        text-shadow: 0 0 8px #2bff00, 0 0 8px #00eeff;
+    }
+}
+
+.form{
+    border: none;
+    border-style:ridge;
+    border-radius: 1%;
+    border-width: 7px;
+    font-family: 'Mukta';
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 15% 3% 15%;
+    
+}
+.form__text{
+    font-size: xx-large;
+    color: #14213D;
+    text-shadow: #000000 1px 1px;
+    text-align: center;
+    padding-left: 3%;
+}
+.form__input{
+    
+    width: 700px;
+    text-align:left;
+    font-size: x-large;
+    border-style:groove;
+    border-color: #6746B9;
+    border-width: 3px;
+    
+    color: #02DEC4;
+}
+.form__input:default{
+    background-color: #ff880072;
+}
+.form__input:invalid{
+    background-color: rgba(255, 0, 0, 0.429);
+}
+.form__input:valid{
+    background-color: rgba(21, 243, 5, 0.429);
+}
+
+.form__checktxt{
+    font-size: x-large;
+    color: #14213D;
+    text-shadow: #000000 1px 1px;
+    text-align: end;
+    padding-left: 10%;
+}
+.form__checkbox:invalid{
+    background-color: rgba(255, 0, 0, 0.429);
+}
+
+.form__checkbox{
+    width: 20px;
+    height: 20px;
+}
+.form__bigsqr{
+    
+    margin-bottom: 5%;
+    height: 100px; 
+    width: 700px;
+    padding: 12px 20px;
+    font-size: larger;
+    background-color: rgba(21, 243, 5, 0.429);
+    border-style:groove;
+    border-color: #6746B9;
+    border-width: 3px;
+    color: #02DEC4;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#data{
+    font-family: 'Mukta';
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Mukta';
+    color: #FCA311;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

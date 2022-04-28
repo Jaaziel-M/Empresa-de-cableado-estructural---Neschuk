@@ -1,0 +1,66 @@
+
+
+@keyframes link {
+    0%{
+        text-shadow: 2px 2px #21b114;
+    }
+    10%{
+        text-shadow: 2px 2px #3a4339;
+    }
+    20%{
+        text-shadow: 2px 2px #3a4339;
+    }
+    30%{
+        text-shadow: 2px 2px #21b114;
+    }
+    40%{
+        text-shadow: 2px 2px #3a4339;
+    }
+    50%{
+        text-shadow: 2px 2px #21b114;
+    }
+    60%{
+        text-shadow: 2px 2px #3a4339;
+    }
+    70%{
+        text-shadow: 2px 2px #21b114;
+    }
+    80%{
+        text-shadow: 2px 2px #3a4339;
+    }
+    90%{
+        text-shadow: 2px 2px #21b114;
+    }
+    100%{
+        text-shadow: 2px 2px #21b114;
+    }
+}
+
+@keyframes colores{
+    0%{
+        color: #F97111;
+        text-shadow: #0621A6 3px 3px;
+    }
+    25%{
+        color: #f9ce11;
+        text-shadow: #137087 3px 3px;
+    }
+    50%{
+        color: #14dd1e;
+        text-shadow: #3f1ca9 3px 3px;
+    }
+    75%
+    {
+        color: #2b48da;
+        text-shadow: #3f1ca9 3px 3px;
+    }
+    100%
+    {
+        color: #14dd1e;
+        text-shadow: #8620b2 3px 3px;
+    }
+}
+
+@keyframes ArgenEffect {
+    0%{ transform: rotateY(360deg);}
+}

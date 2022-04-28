@@ -1,0 +1,57 @@
+@import "animaciones";
+
+
+/*CSS galería*/
+
+.container-fluid{
+    background-image: url("../assets/backgrounds/8220network1.jpg");
+    background-repeat: no-repeat ;
+    background-attachment:fixed ;
+    background-size:cover ;
+    background-position: center center;
+}
+
+.gal__title{
+    font-family: 'Mukta';
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+}
+.col-lg-4{
+    padding: 10px;
+}
+
+
+
+/*TEST*/
+.hover-zoomin a {
+    /*display: block;*/
+    position: relative;
+    overflow: hidden;
+}
+.hover-zoomin img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*END TEST*/
+
+
+/*Fin CSS Galeria */

@@ -1,0 +1,19 @@
+@import "animaciones";
+@import "estructura";
+@import "index";
+@import "galeria";
+@import "acerca-de";
+@import "alcance";
+@import "contacto";
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
+}
+

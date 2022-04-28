@@ -35,23 +35,17 @@
 }
 
 .texto2{
+    @extend .texto1;
     grid-area: texto2;
-    padding: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    background-color: none;
-    transition: background-color 1s;
+    
 }
 .texto2:hover{
     background-color: #000000;
 }
 .texto3{
+    @extend .texto1;
     grid-area: texto3;
-    padding: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    background-color: none;
-    transition: background-color 1s;
+    
 }
 .texto3:hover{
     background-color: #000000;
@@ -81,7 +75,6 @@
 }
 .reach__txt{
     color:#FFFFFF;
-    
     font-size: large;
     grid-area: texto1;
 }

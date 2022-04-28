@@ -488,7 +488,7 @@ footer .SocialIcons {
   display: flex;
   flex-direction: row; }
 
-.texto1 {
+.texto1, .texto2, .texto3 {
   grid-area: texto1;
   padding: 1%;
   margin-left: 1%;
@@ -496,27 +496,17 @@ footer .SocialIcons {
   background-color: none;
   transition: background-color 1s; }
 
-.texto1:hover {
+.texto1:hover, .texto2:hover, .texto3:hover {
   background-color: #000000; }
 
 .texto2 {
-  grid-area: texto2;
-  padding: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  background-color: none;
-  transition: background-color 1s; }
+  grid-area: texto2; }
 
 .texto2:hover {
   background-color: #000000; }
 
 .texto3 {
-  grid-area: texto3;
-  padding: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  background-color: none;
-  transition: background-color 1s; }
+  grid-area: texto3; }
 
 .texto3:hover {
   background-color: #000000; }

@@ -96,9 +96,6 @@ header {
   align-items: center; }
 
 footer {
-  /*.footr{
-            
-        }*/
   grid-area: footr;
   text-align: center; }
   footer .SocialIcons {
@@ -330,9 +327,7 @@ footer {
 .col-lg-4 {
   padding: 10px; }
 
-/*TEST*/
 .hover-zoomin a {
-  /*display: block;*/
   position: relative;
   overflow: hidden; }
 
@@ -352,7 +347,6 @@ footer {
   -ms-transform: scale(1.2);
   transform: scale(1.2); }
 
-/*END TEST*/
 /*Fin CSS Galeria */
 /* CCS Acerca de  */
 .allcert {
@@ -585,8 +579,6 @@ footer {
 .svc__img {
   height: 1000px;
   width: 440px;
-  /*display: flex;
-    flex-direction: column;*/
   animation-name: ArgenEffect;
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
@@ -865,8 +857,6 @@ footer {
         width: 100%;
         height: 100%;
         position: absolute;
-        /*overflow: hidden;*/
-        /*-webkit-backface-visibility: hidden ;*/
         z-index: 2;
         font-family: Mukta;
         font-size: 12px;

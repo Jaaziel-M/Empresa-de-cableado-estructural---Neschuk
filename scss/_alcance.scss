@@ -30,14 +30,11 @@
 }
 .texto1:hover{
     background-color: #000000;
-    
-
 }
 
 .texto2{
     @extend .texto1;
     grid-area: texto2;
-    
 }
 .texto2:hover{
     background-color: #000000;
@@ -52,7 +49,8 @@
 }
 .reach__article{
     grid-area: foto;
-    
+    display: flex;
+    flex-direction: column;
 }
 .reach__title{
     display: grid;
@@ -126,8 +124,8 @@
 .svc__img{
     height: 1000px;
     width: 440px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     animation-name: ArgenEffect;
     animation-iteration-count: 2;
     animation-timing-function: ease-in;

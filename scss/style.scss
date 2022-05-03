@@ -17,3 +17,834 @@
     src: url('../assets/fonts/Mukta/Mukta-Regular.ttf');
 }
 
+
+
+
+/*media queries*/
+
+
+    /*Smartphone  vertical*/
+
+@media(max-width:500px) and (min-width:360px){
+
+
+    header{
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .nec{
+                width: 350px;
+                height: 100px;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        font-size: 15px;
+                        color: #E5E5E5;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 5px;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                            padding: 1px;
+                        }
+                    }
+                }
+            }
+            .form-inline{
+
+                size: 20%;
+            }
+            form{
+                display: inline;
+                justify-content: center;
+                input{
+
+                }
+                button{
+
+                }
+            }
+        }
+    }
+
+/*Index*/
+
+    .IndexBody{
+
+        font-family: 'Mukta';
+        background-color: #14213D;
+        display: column;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "title title title"
+        "values values values"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows:  250px 400px 1000px 350px; 
+    }
+    .Slogan{
+
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    .giradores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value__txt{
+        text-align: center;
+        font-size: 15px;
+        color: map-get($colores,paleta3);
+    }
+    .FlipIcon{
+        background-color: map-get($colores,paleta0);
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .flipy {
+            -webkit-perspective: none;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            border: none;
+            .card{
+                width: 100%;
+                height: 100%;
+                -webkit-transform-style: none;
+                -webkit-transition: none;
+                &:hover{
+                    -webkit-transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -o-transform: none;
+                }
+    
+                .face {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    /*overflow: hidden;*/
+                    /*-webkit-backface-visibility: hidden ;*/
+                    z-index: 2;
+                    font-family: Mukta;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 23px;
+                }
+                .front {
+                    position: absolute;
+                    z-index: 1;
+                    background: map-get($colores,paleta0);
+                    color: map-get($colores,paleta0);
+                    cursor: pointer;
+                }
+                .back {
+                    -webkit-transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -o-transform: none;
+                    background: map-get($colores,paleta0);
+                    cursor: none;
+                }
+            }
+            
+    }
+    
+
+
+
+
+
+
+
+/*Alcance*/
+
+    .allreach{
+    background-color: #14213D;
+    background-position: center;
+    background-size:cover;
+    font-family: 'Mukta';
+    display: grid;
+    grid-template-areas: 
+    "hdr hdr hdr"
+    "titulo titulo titulo"
+    "texto1 texto1 texto1"
+    "texto2 texto2 texto2"
+    "texto3 texto3 texto3"
+    "foto foto foto"
+    "sucursales sucursales sucursales"
+    "footr footr footr"
+    ;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:  250px 100px 100% 100% 100% 350% 400px 350px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    align-items: center;
+    }
+
+    .reach__title{
+        color:  #E5E5E5;
+        text-shadow:1px 1px #FCA311;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    
+    .reach__li{
+        
+        font-size: 20px;
+    }
+
+    .reach__txt{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .svc__title{
+    
+        text-align: center;
+        color:  #E5E5E5;
+        text-shadow:1px 1px #FCA311;
+        font-size: 20px;
+    }
+    .svc__img{
+        height: 100px;
+        width: 50px;
+        padding-left: 1%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        animation-name: none;
+        animation-iteration-count: 0;
+        animation-timing-function: none;
+        animation-duration: none;
+        animation-delay: none;
+        overflow: none;
+    }
+
+    .places {
+        position: relative;
+        width: 90%;
+        max-width: 200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 4px;
+    }
+    .suc__title{
+        font-size: 20px;
+        display: flex;
+        text-align: center;
+    }
+
+    .places{
+        .places-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+    } 
+    .places{
+        .places-overlay{
+            opacity: 1;
+        }
+    }
+    
+    .places-title{
+        font-size: 15px;
+    } 
+
+
+
+
+
+
+
+    /* acerca de */
+
+    
+
+    .cert__item1{
+        font-size: 15px;
+    }
+    .cert__item2{  
+        font-size: 13px;
+    }
+    .about__title{
+        font-size: 25px;
+        padding-top: 5px;
+    }
+    .about__txt{
+        font-size: 20px;
+    }
+    .toptitle{
+        font-size: 22px;
+    }
+    .toptext{
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+    /* Contacto */
+
+
+
+    .ConsHead{
+        font-size: 30px;
+    }
+    
+    .form{
+        margin: 3% 15px 3% 15px;
+    }
+
+    .form__text{
+        font-size: 20px;
+    }
+    .form__input{
+        
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .form__bigsqr{
+    
+        width: 300px;;
+    }
+
+    .form__checkbox{
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .form__checktxt{
+        font-size: 15px;
+    }
+
+    #data{
+        font-size: 25px;
+    }
+
+    
+
+
+}
+    
+    
+    /*smartphone horizontal*/
+
+@media (min-width:667px) and (max-width:1079px) {
+        
+    .IndexBody{
+
+        font-family: 'Mukta';
+        background-color: #14213D;
+        display: column;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "title title title"
+        "values values values"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows:  200px 400px 400px 150px; 
+    }
+
+    header{
+            nav{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .nec{
+                    width: 350px;
+                    height: 100px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            font-size: 25px;
+                            color: #E5E5E5;
+                            display: flex;
+                            flex-direction: row;
+                            padding: 5px;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                                padding: 1px;
+                            }
+                        }
+                    }
+                }
+                .form-inline{
+    
+                    size: 20%;
+                }
+                form{
+                    display: inline;
+                    justify-content: center;
+                    input{
+    
+                    }
+                    button{
+    
+                    }
+                }
+            }
+    }
+
+    .giradores{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .value__txt{
+        text-align: center;
+        font-size: 15px;
+        color: map-get($colores,paleta3);
+    }
+    .FlipIcon{
+        background-color: map-get($colores,paleta0);
+        width: 250px;
+        height: 300px;
+        position: relative;
+    }
+
+    .flipy {
+        -webkit-perspective: none;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        border: none;
+    }
+
+    /* ALCANCE  */
+
+    .allreach{
+        background-color: #14213D;
+        background-position: center;
+        background-size:cover;
+        font-family: 'Mukta';
+        display: grid;
+        grid-template-areas: 
+        "hdr hdr hdr"
+        "titulo titulo titulo"
+        "texto1 texto2 texto3"
+        "foto sucursales sucursales"
+        "footr footr footr"
+        ;
+        grid-template-columns: 33% auto 33%;
+        grid-template-rows:  200px 50px 250% 300% 300px;
+        grid-row-gap: 2px;
+        grid-column-gap: 2px;
+        align-items: center;
+    }
+    
+    .reach__title{
+        font-size: 35px;
+        padding-top: 20px
+    }
+    .reach__li{
+        
+        font-size: 20px;
+        
+    }
+    .reach__txt{
+        font-size: 15px;
+        text-align: center;
+    }
+    .svc__title{
+        font-size: 20px;
+    }
+    .svc__img{
+        height: 400px;
+        width: 200px;
+    }
+    
+    .flipy {
+        -webkit-perspective: none;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        border: none;
+        .card{
+            width: 210px;
+            height: 350px;
+            -webkit-transform-style: none;
+            -webkit-transition: none;
+            &:hover{
+                -webkit-transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+            }
+
+            .face {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                /*overflow: hidden;*/
+                /*-webkit-backface-visibility: hidden ;*/
+                z-index: 2;
+                font-family: Mukta;
+                font-size: 12px;
+                text-align: center;
+                line-height: 23px;
+            }
+            .front {
+                position: absolute;
+                z-index: 1;
+                background: map-get($colores,paleta0);
+                color: map-get($colores,paleta0);
+                cursor: pointer;
+            }
+            .back {
+                -webkit-transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+                background: map-get($colores,paleta0);
+                cursor:auto;
+            }
+        }
+        
+    }
+
+    .places {
+        position: relative;
+        width: 90%;
+        max-width: 200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 4px;
+    }
+    .suc__title{
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
+
+    .places{
+        .places-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+    } 
+    .places{
+        .places-overlay{
+            opacity: 1;
+        }
+    }
+    
+    .places-title{
+        font-size: 15px;
+    } 
+
+    /*Contacto*/
+
+    .form{
+        margin: 3% 15px 3% 15px;
+        
+    }
+}
+    
+    /*Ipad horizontal*/
+    
+@media (min-width:1080px) and (max-width:1090px){
+        
+        .IndexBody{
+    
+            font-family: 'Mukta';
+            background-color: #14213D;
+            display: column;
+            grid-template-areas: 
+            "hdr hdr hdr"
+            "title title title"
+            "values values values"
+            "footr footr footr"
+            ;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows:  200px 400px 400px 150px; 
+        }
+    
+        header{
+            nav{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .nec{
+                    width: 350px;
+                    height: 100px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            font-size: 15px;
+                            color: #E5E5E5;
+                            display: flex;
+                            flex-direction: row;
+                            padding: 5px;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                                padding: 1px;
+                            }
+                        }
+                    }
+                }
+                .form-inline{
+    
+                    size: 20%;
+                }
+                form{
+                    display: inline;
+                    justify-content: center;
+                    input{
+    
+                    }
+                    button{
+    
+                    }
+                }
+            }
+        }
+    
+        .giradores{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+        }
+    
+        .value__txt{
+            text-align: center;
+            font-size: 15px;
+            color: map-get($colores,paleta3);
+        }
+        .FlipIcon{
+            background-color: map-get($colores,paleta0);
+            width: 250px;
+            height: 300px;
+            position: relative;
+        }
+    
+        .flipy {
+        -webkit-perspective: none;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        border: none;
+        
+        .card{
+                width: 200px;
+                height: 300px;
+                -webkit-transform-style: none;
+                -webkit-transition: none;
+                &:hover{
+                    -webkit-transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -o-transform: none;
+                }
+    
+                .face {
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    /*overflow: hidden;*/
+                    /*-webkit-backface-visibility: hidden ;*/
+                    z-index: 2;
+                    font-family: Mukta;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                .front {
+                    position: absolute;
+                    z-index: 1;
+                    background: map-get($colores,paleta0);
+                    color: map-get($colores,paleta0);
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+                .back {
+                    -webkit-transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -o-transform: none;
+                    background: map-get($colores,paleta0);
+                    cursor: none;
+                }
+            }
+            
+        }
+
+        .allreach{
+            background-color: #14213D;
+            background-position: center;
+            background-size:cover;
+            font-family: 'Mukta';
+            display: grid;
+            grid-template-areas: 
+            "hdr hdr hdr"
+            "titulo titulo titulo"
+            "texto1 texto2 texto3"
+            "foto sucursales sucursales"
+            "footr footr footr"
+            ;
+            grid-template-columns: 33% auto 33%;
+            grid-template-rows:  200px 100px 250% 300% 200px;
+            grid-row-gap: 2px;
+            grid-column-gap: 2px;
+            align-items: center;
+    }
+    
+    .reach__title{
+        /*display: grid;
+        grid-area: titulo;
+        justify-content: center;
+        color:  #E5E5E5;
+        text-shadow:1px 1px #FCA311;*/
+        font-size: 40px;
+        /*text-align: center;*/
+        padding-top: 10px
+    }
+    .reach__li{
+        
+        font-size: 15px;
+        
+    }
+    .reach__txt{
+        /*color:#FFFFFF;*/
+        font-size: 15px;
+        /*grid-area: texto1;*/
+        text-align: center;
+    }
+    .svc__title{
+    
+        /*text-align: center;
+        color:  #E5E5E5;
+        text-shadow:1px 1px #FCA311;*/
+        font-size: 20px;
+    }
+    .svc__img{
+        height: 400px;
+        width: 200px;
+    }
+    
+    .flipy {
+        -webkit-perspective: none;
+        width: 300px;
+        height: 350px;
+        position: relative;
+        border: none;
+        .card{
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: none;
+            -webkit-transition: none;
+            &:hover{
+                -webkit-transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+            }
+
+            .face {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+                font-family: Mukta;
+                font-size: 12px;
+                text-align: center;
+                line-height: 30px;
+            }
+            .front {
+                position: absolute;
+                z-index: 1;
+                background: map-get($colores,paleta0);
+                color: map-get($colores,paleta0);
+                cursor: pointer;
+            }
+            .back {
+                -webkit-transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+                background: map-get($colores,paleta0);
+                cursor: none;
+            }
+        }
+        
+    }
+
+    .places {
+        position: relative;
+        width: 90%;
+        max-width: 200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 4px;
+    }
+    .suc__title{
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
+
+    .places{
+        .places-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+    } 
+    .places{
+        .places-overlay{
+            opacity: 1;
+        }
+    }
+    
+    .places-title{
+        font-size: 15px;
+    } 
+
+}
+    

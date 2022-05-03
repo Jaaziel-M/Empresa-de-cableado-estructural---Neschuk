@@ -74,8 +74,6 @@ $colores:(
 .MainIndex{
     grid-area: values;
     background-color: map-get($colores,paleta0);
-    
-
 }
 
 .value__title{
@@ -83,27 +81,18 @@ $colores:(
     font-size: 30px;
     text-shadow: map-get($colores,paleta2) 1px 1px;
     text-align: center;
-    
-    
 }
+
 .value__txt{
     text-align: center;
     font-size: large;
     color: map-get($colores,paleta3);
-    
 }
+
 .FlipIcon{
     background-color: map-get($colores,paleta0);
     width: 300px;
     height: 300px;
-}
-
-.footr{
-    font-family: 'Mukta';
-    font-weight:bold;
-    text-align: center;
-    grid-area: footr;
-
 }
 
 .giradores{
@@ -122,7 +111,7 @@ $colores:(
     height: 340px;
     position: relative;
     border: none;
-    }
+    
 
     .card{
             width: 100%;
@@ -165,4 +154,5 @@ $colores:(
             }
         }
         
-    
+    }
+

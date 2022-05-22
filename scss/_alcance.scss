@@ -1,5 +1,7 @@
 
 @import "animaciones";
+@import "estructura";
+
 
 @mixin pairs{
     display: flex;
@@ -87,7 +89,7 @@
 
 
 .suc__prov{
-    /*border: #ff8800;*/
+    
     color: #440099;
     font-size: 30px;
     display: flex;
@@ -100,7 +102,7 @@
 
     font-size: 25px;
     text-align: end;
-    /*padding-right: 3%;*/
+    
 
 }
 

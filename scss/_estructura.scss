@@ -78,6 +78,7 @@ header{
 
 
 
+
 .allreach{
         background-color: #14213D;
         background-position: center;
@@ -92,11 +93,16 @@ header{
         "footr footr footr"
         ;
         grid-template-columns: 33% auto 33%;
-        grid-template-rows:  110px 130px 250% 300% 200px;
+        grid-template-rows: 110px 130px 350px auto 200px;
         grid-row-gap: 2px;
         grid-column-gap: 2px;
         align-items: center;
+
 }
+
+
+
+
 
 footer{
         

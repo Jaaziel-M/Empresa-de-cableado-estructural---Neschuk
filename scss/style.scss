@@ -510,8 +510,6 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                /*overflow: hidden;*/
-                /*-webkit-backface-visibility: hidden ;*/
                 z-index: 2;
                 font-family: Mukta;
                 font-size: 12px;
@@ -685,8 +683,6 @@
                     width: 300px;
                     height: 300px;
                     position: absolute;
-                    /*overflow: hidden;*/
-                    /*-webkit-backface-visibility: hidden ;*/
                     z-index: 2;
                     font-family: Mukta;
                     font-size: 12px;
@@ -734,13 +730,7 @@
     }
     
     .reach__title{
-        /*display: grid;
-        grid-area: titulo;
-        justify-content: center;
-        color:  #E5E5E5;
-        text-shadow:1px 1px #FCA311;*/
         font-size: 40px;
-        /*text-align: center;*/
         padding-top: 10px
     }
     .reach__li{
@@ -749,16 +739,10 @@
         
     }
     .reach__txt{
-        /*color:#FFFFFF;*/
         font-size: 15px;
-        /*grid-area: texto1;*/
         text-align: center;
     }
     .svc__title{
-    
-        /*text-align: center;
-        color:  #E5E5E5;
-        text-shadow:1px 1px #FCA311;*/
         font-size: 20px;
     }
     .svc__img{

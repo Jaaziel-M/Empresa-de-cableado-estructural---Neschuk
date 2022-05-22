@@ -90,7 +90,7 @@ header {
   display: grid;
   grid-template-areas: "hdr hdr hdr" "titulo titulo titulo" "texto1 texto2 texto3" "foto sucursales sucursales" "footr footr footr";
   grid-template-columns: 33% auto 33%;
-  grid-template-rows: 110px 130px 250% 300% 200px;
+  grid-template-rows: 110px 130px 350px auto 200px;
   grid-row-gap: 2px;
   grid-column-gap: 2px;
   align-items: center; }
@@ -477,6 +477,64 @@ footer {
   0% {
     transform: rotateY(360deg); } }
 
+header {
+  grid-area: hdr;
+  position: relative;
+  background-color: black; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    header nav .nec {
+      width: 300px;
+      height: 90px;
+      padding-top: 10px; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          font-size: 25px;
+          color: #E5E5E5;
+          display: flex;
+          flex-direction: column;
+          padding: 10px; }
+          header nav ul li a img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-self: center; }
+
+.IndexBody {
+  font-family: 'Mukta';
+  background-color: #14213D;
+  display: grid;
+  grid-template-areas: "hdr hdr hdr" "title title title" "values values values" "footr footr footr";
+  grid-template-columns: 33,3% 33,3% 33,3%;
+  grid-template-rows: 110px 700px 500px 150px; }
+
+.allreach {
+  background-color: #14213D;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Mukta';
+  display: grid;
+  grid-template-areas: "hdr hdr hdr" "titulo titulo titulo" "texto1 texto2 texto3" "foto sucursales sucursales" "footr footr footr";
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: 110px 130px 350px auto 200px;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  align-items: center; }
+
+footer {
+  grid-area: footr;
+  text-align: center; }
+  footer .SocialIcons {
+    width: 60px;
+    height: 60px; }
+
 .reach__aside {
   grid-area: sucursales;
   padding: 3px; }
@@ -549,7 +607,6 @@ footer {
   background-color: #333333; }
 
 .suc__prov {
-  /*border: #ff8800;*/
   color: #440099;
   font-size: 30px;
   display: flex;
@@ -559,8 +616,7 @@ footer {
 .suc__site {
   color: #333333;
   font-size: 25px;
-  text-align: end;
-  /*padding-right: 3%;*/ }
+  text-align: end; }
 
 .suc__title {
   color: #E5E5E5;
@@ -1074,8 +1130,6 @@ footer {
         width: 100%;
         height: 100%;
         position: absolute;
-        /*overflow: hidden;*/
-        /*-webkit-backface-visibility: hidden ;*/
         z-index: 2;
         font-family: Mukta;
         font-size: 12px;
@@ -1190,8 +1244,6 @@ footer {
         width: 300px;
         height: 300px;
         position: absolute;
-        /*overflow: hidden;*/
-        /*-webkit-backface-visibility: hidden ;*/
         z-index: 2;
         font-family: Mukta;
         font-size: 12px;
@@ -1224,25 +1276,14 @@ footer {
     grid-column-gap: 2px;
     align-items: center; }
   .reach__title {
-    /*display: grid;
-        grid-area: titulo;
-        justify-content: center;
-        color:  #E5E5E5;
-        text-shadow:1px 1px #FCA311;*/
     font-size: 40px;
-    /*text-align: center;*/
     padding-top: 10px; }
   .reach__li {
     font-size: 15px; }
   .reach__txt {
-    /*color:#FFFFFF;*/
     font-size: 15px;
-    /*grid-area: texto1;*/
     text-align: center; }
   .svc__title {
-    /*text-align: center;
-        color:  #E5E5E5;
-        text-shadow:1px 1px #FCA311;*/
     font-size: 20px; }
   .svc__img {
     height: 400px;
